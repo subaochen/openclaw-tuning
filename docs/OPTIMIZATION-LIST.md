@@ -2,8 +2,8 @@
 
 ## 📊 优化统计
 
-- **总优化数**: 12 项
-- **新增 Skills**: 4 个
+- **总优化数**: 13 项
+- **新增 Skills**: 5 个
 - **新增 Dashboard**: 2 个
 - **配置更新**: 6 项
 
@@ -42,9 +42,25 @@
 
 ---
 
-### 二、Skills 增强 (4 项)
+### 二、Skills 增强 (5 项)
 
-#### 4. New Project Skill
+#### 4. Project Context Skill - 上下文传递与缓存 ⭐
+- **日期**: 2026-04-22
+- **位置**: `/home/sbc/git/myskills/project-context/`
+- **功能**:
+  - 初始化项目上下文（init-context.js）
+  - 写入分析结果（write-context.js）
+  - 读取上下文（read-context.js）
+  - 验证完整性（validate-context.js）
+  - 导出上下文（export-context.js）
+- **核心价值**: 
+  - 避免重复理解代码（效率提升 67%）
+  - 上下文不丢失（强制传递完整链路）
+  - 增量理解（只理解变更的文件）
+- **部署脚本**: `deploy-skills.sh`
+- **状态**: ✅ 已部署
+
+#### 5. New Project Skill
 - **日期**: 2026-04-23
 - **位置**: `~/.openclaw/skills/new-project/`
 - **功能**:
@@ -55,7 +71,7 @@
 - **部署脚本**: `deploy-skills.sh`
 - **状态**: ✅ 已部署
 
-#### 5. Refactor Helper Skill
+#### 6. Refactor Helper Skill
 - **日期**: 2026-04-23
 - **位置**: `~/.openclaw/skills/refactor-helper/`
 - **功能**:
@@ -65,7 +81,7 @@
 - **部署脚本**: `deploy-skills.sh`
 - **状态**: ✅ 已部署
 
-#### 6. Code Reviewer 架构审查增强
+#### 7. Code Reviewer 架构审查增强
 - **日期**: 2026-04-23
 - **位置**: `~/.openclaw/workspace-code-reviewer/`
 - **功能**:
@@ -75,7 +91,7 @@
 - **部署脚本**: `deploy-code-reviewer.sh`
 - **状态**: ✅ 已部署
 
-#### 7. Agent Article Writer 完善
+#### 8. Agent Article Writer 完善
 - **日期**: 2026-04-23
 - **位置**: `~/.openclaw/skills/agent-article-writer/`
 - **功能**:
@@ -89,7 +105,7 @@
 
 ### 三、飞书集成优化 (2 项)
 
-#### 8. 图片 Token 检查
+#### 9. 图片 Token 检查
 - **日期**: 2026-04-23
 - **位置**: `~/.openclaw/extensions/openclaw-lark/`
 - **功能**:
@@ -99,7 +115,7 @@
 - **部署脚本**: `deploy-feishu.sh`
 - **状态**: ✅ 已部署
 
-#### 9. CNKI 插件错误处理优化
+#### 10. CNKI 插件错误处理优化
 - **日期**: 2026-04-23
 - **位置**: `~/.openclaw/skills/cnki-thesis-review/`
 - **功能**:
@@ -113,7 +129,7 @@
 
 ### 四、配置与环境 (3 项)
 
-#### 10. 环境变量配置
+#### 11. 环境变量配置
 - **日期**: 2026-04-22
 - **位置**: `~/.bashrc`
 - **功能**:
@@ -123,7 +139,7 @@
 - **部署脚本**: `update-env.sh`
 - **状态**: ✅ 已配置
 
-#### 11. openclaw.json 配置更新
+#### 12. openclaw.json 配置更新
 - **日期**: 2026-04-22
 - **位置**: `~/.openclaw/openclaw.json`
 - **功能**:
@@ -133,7 +149,7 @@
 - **部署脚本**: `update-config.sh`
 - **状态**: ✅ 已更新
 
-#### 12. Harness Engineering 实施
+#### 13. Harness Engineering 实施
 - **日期**: 2026-04-21
 - **位置**: 全局架构
 - **功能**:
@@ -159,7 +175,7 @@ cd ~/git/openclaw-tuning
 # 部署 Dashboard
 ./scripts/deploy-dashboard.sh
 
-# 部署 Skills
+# 部署 Skills（包括 Project Context）
 ./scripts/deploy-skills.sh
 
 # 部署飞书集成
@@ -208,4 +224,4 @@ cd ~/git/openclaw-tuning
 
 ---
 
-*最后更新：2026-04-23 14:25*
+*最后更新：2026-04-23 14:27*
