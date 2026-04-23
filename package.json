@@ -1,0 +1,11 @@
+{
+  "name": "openclaw-tuning",
+  "version": "1.0.0",
+  "description": "OpenClaw 模型调优与性能优化工具",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "dev": "nodemon src/index.js"
+  }
+}
